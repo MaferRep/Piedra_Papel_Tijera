@@ -50,6 +50,9 @@ while True:
                     if fingers == [0, 1, 1, 0, 0]:
                         playerMove = 3
                         print ("elegiste tijera")
+                     if fingers == [0, 0, 1, 0, 0]:
+                        playerMove = 4
+                        print ("HEY NO SEAS GROSERO >:I eso no es piedra papel o tijeras")
                     
                     randomNumber = random.randint(1, 3)
                     imgAI= cv2.imread(f'Resources/{randomNumber}.png', cv2.IMREAD_UNCHANGED) 
